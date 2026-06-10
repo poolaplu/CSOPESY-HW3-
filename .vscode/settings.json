@@ -1,0 +1,7 @@
+{
+    "cmake.generator": "MinGW Makefiles",
+    "cmake.configureOnOpen": true,
+    "cmake.configureArgs": [
+        "-DCMAKE_MAKE_PROGRAM=C:/msys64/ucrt64/bin/mingw32-make.exe"
+    ]
+}
