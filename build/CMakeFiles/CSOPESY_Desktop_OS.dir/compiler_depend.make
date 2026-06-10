@@ -1506,11 +1506,18 @@ CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_widgets.cpp.obj: C:/Users/PC/Deskt
   C:/Users/PC/Desktop/CSOPESY\ HW\ 3\ GROUP/imgui/imgui_internal.h \
   C:/Users/PC/Desktop/CSOPESY\ HW\ 3\ GROUP/imgui/imstb_textedit.h
 
+CMakeFiles/CSOPESY_Desktop_OS.dir/src/Desktop.cpp.obj: C:/Users/PC/Desktop/CSOPESY\ HW\ 3\ GROUP/src/Desktop.cpp
+
+CMakeFiles/CSOPESY_Desktop_OS.dir/src/ShellUI.cpp.obj: C:/Users/PC/Desktop/CSOPESY\ HW\ 3\ GROUP/src/ShellUI.cpp
+
+CMakeFiles/CSOPESY_Desktop_OS.dir/src/TaskManager.cpp.obj: C:/Users/PC/Desktop/CSOPESY\ HW\ 3\ GROUP/src/TaskManager.cpp
+
 CMakeFiles/CSOPESY_Desktop_OS.dir/src/main.cpp.obj: C:/Users/PC/Desktop/CSOPESY\ HW\ 3\ GROUP/src/main.cpp \
   C:/Users/PC/Desktop/CSOPESY\ HW\ 3\ GROUP/imgui/imconfig.h \
   C:/Users/PC/Desktop/CSOPESY\ HW\ 3\ GROUP/imgui/imgui.h \
   C:/Users/PC/Desktop/CSOPESY\ HW\ 3\ GROUP/imgui/imgui_impl_glfw.h \
   C:/Users/PC/Desktop/CSOPESY\ HW\ 3\ GROUP/imgui/imgui_impl_opengl3.h \
+  C:/Users/PC/Desktop/CSOPESY\ HW\ 3\ GROUP/include/AppState.h \
   C:/msys64/ucrt64/include/GL/gl.h \
   C:/msys64/ucrt64/include/GLFW/glfw3.h \
   C:/msys64/ucrt64/include/_mingw.h \
@@ -2057,6 +2064,8 @@ C:/msys64/ucrt64/include/stringapiset.h:
 
 C:/msys64/ucrt64/include/swprintf.inl:
 
+C:/Users/PC/Desktop/CSOPESY\ HW\ 3\ GROUP/src/Desktop.cpp:
+
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512fp16intrin.h:
 
 C:/msys64/ucrt64/include/synchapi.h:
@@ -2371,6 +2380,8 @@ C:/msys64/ucrt64/include/rpc.h:
 
 C:/Users/PC/Desktop/CSOPESY\ HW\ 3\ GROUP/imgui/imconfig.h:
 
+C:/Users/PC/Desktop/CSOPESY\ HW\ 3\ GROUP/include/AppState.h:
+
 C:/Users/PC/Desktop/CSOPESY\ HW\ 3\ GROUP/imgui/imgui.h:
 
 C:/Users/PC/Desktop/CSOPESY\ HW\ 3\ GROUP/imgui/imgui_internal.h:
@@ -2487,6 +2498,12 @@ C:/Users/PC/Desktop/CSOPESY\ HW\ 3\ GROUP/imgui/imgui_impl_opengl3_loader.h:
 
 C:/Users/PC/Desktop/CSOPESY\ HW\ 3\ GROUP/imgui/imgui_widgets.cpp:
 
+C:/Users/PC/Desktop/CSOPESY\ HW\ 3\ GROUP/src/ShellUI.cpp:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/locale_facets.tcc:
+
+C:/Users/PC/Desktop/CSOPESY\ HW\ 3\ GROUP/src/TaskManager.cpp:
+
 C:/msys64/ucrt64/include/_mingw_stat64.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/allocator.h:
@@ -2504,8 +2521,6 @@ C:/msys64/ucrt64/include/c++/15.2.0/bits/functional_hash.h:
 C:/msys64/ucrt64/include/c++/15.2.0/bits/locale_classes.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/locale_classes.tcc:
-
-C:/msys64/ucrt64/include/c++/15.2.0/bits/locale_facets.tcc:
 
 C:/msys64/ucrt64/include/c++/15.2.0/clocale:
 

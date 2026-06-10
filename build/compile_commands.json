@@ -1,6 +1,24 @@
 [
 {
   "directory": "C:/Users/PC/Desktop/CSOPESY HW 3 GROUP/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DGLFW_DLL @CMakeFiles/CSOPESY_Desktop_OS.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CSOPESY_Desktop_OS.dir\\src\\Desktop.cpp.obj -c \"C:\\Users\\PC\\Desktop\\CSOPESY HW 3 GROUP\\src\\Desktop.cpp\"",
+  "file": "C:/Users/PC/Desktop/CSOPESY HW 3 GROUP/src/Desktop.cpp",
+  "output": "CMakeFiles/CSOPESY_Desktop_OS.dir/src/Desktop.cpp.obj"
+},
+{
+  "directory": "C:/Users/PC/Desktop/CSOPESY HW 3 GROUP/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DGLFW_DLL @CMakeFiles/CSOPESY_Desktop_OS.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CSOPESY_Desktop_OS.dir\\src\\ShellUI.cpp.obj -c \"C:\\Users\\PC\\Desktop\\CSOPESY HW 3 GROUP\\src\\ShellUI.cpp\"",
+  "file": "C:/Users/PC/Desktop/CSOPESY HW 3 GROUP/src/ShellUI.cpp",
+  "output": "CMakeFiles/CSOPESY_Desktop_OS.dir/src/ShellUI.cpp.obj"
+},
+{
+  "directory": "C:/Users/PC/Desktop/CSOPESY HW 3 GROUP/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DGLFW_DLL @CMakeFiles/CSOPESY_Desktop_OS.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CSOPESY_Desktop_OS.dir\\src\\TaskManager.cpp.obj -c \"C:\\Users\\PC\\Desktop\\CSOPESY HW 3 GROUP\\src\\TaskManager.cpp\"",
+  "file": "C:/Users/PC/Desktop/CSOPESY HW 3 GROUP/src/TaskManager.cpp",
+  "output": "CMakeFiles/CSOPESY_Desktop_OS.dir/src/TaskManager.cpp.obj"
+},
+{
+  "directory": "C:/Users/PC/Desktop/CSOPESY HW 3 GROUP/build",
   "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DGLFW_DLL @CMakeFiles/CSOPESY_Desktop_OS.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\CSOPESY_Desktop_OS.dir\\src\\main.cpp.obj -c \"C:\\Users\\PC\\Desktop\\CSOPESY HW 3 GROUP\\src\\main.cpp\"",
   "file": "C:/Users/PC/Desktop/CSOPESY HW 3 GROUP/src/main.cpp",
   "output": "CMakeFiles/CSOPESY_Desktop_OS.dir/src/main.cpp.obj"

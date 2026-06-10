@@ -71,11 +71,56 @@ include CMakeFiles/CSOPESY_Desktop_OS.dir/flags.make
 CMakeFiles/CSOPESY_Desktop_OS.dir/codegen:
 .PHONY : CMakeFiles/CSOPESY_Desktop_OS.dir/codegen
 
+CMakeFiles/CSOPESY_Desktop_OS.dir/src/Desktop.cpp.obj: CMakeFiles/CSOPESY_Desktop_OS.dir/flags.make
+CMakeFiles/CSOPESY_Desktop_OS.dir/src/Desktop.cpp.obj: CMakeFiles/CSOPESY_Desktop_OS.dir/includes_CXX.rsp
+CMakeFiles/CSOPESY_Desktop_OS.dir/src/Desktop.cpp.obj: C:/Users/PC/Desktop/CSOPESY\ HW\ 3\ GROUP/src/Desktop.cpp
+CMakeFiles/CSOPESY_Desktop_OS.dir/src/Desktop.cpp.obj: CMakeFiles/CSOPESY_Desktop_OS.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CSOPESY_Desktop_OS.dir/src/Desktop.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CSOPESY_Desktop_OS.dir/src/Desktop.cpp.obj -MF CMakeFiles\CSOPESY_Desktop_OS.dir\src\Desktop.cpp.obj.d -o CMakeFiles\CSOPESY_Desktop_OS.dir\src\Desktop.cpp.obj -c "C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\src\Desktop.cpp"
+
+CMakeFiles/CSOPESY_Desktop_OS.dir/src/Desktop.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CSOPESY_Desktop_OS.dir/src/Desktop.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\src\Desktop.cpp" > CMakeFiles\CSOPESY_Desktop_OS.dir\src\Desktop.cpp.i
+
+CMakeFiles/CSOPESY_Desktop_OS.dir/src/Desktop.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CSOPESY_Desktop_OS.dir/src/Desktop.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\src\Desktop.cpp" -o CMakeFiles\CSOPESY_Desktop_OS.dir\src\Desktop.cpp.s
+
+CMakeFiles/CSOPESY_Desktop_OS.dir/src/ShellUI.cpp.obj: CMakeFiles/CSOPESY_Desktop_OS.dir/flags.make
+CMakeFiles/CSOPESY_Desktop_OS.dir/src/ShellUI.cpp.obj: CMakeFiles/CSOPESY_Desktop_OS.dir/includes_CXX.rsp
+CMakeFiles/CSOPESY_Desktop_OS.dir/src/ShellUI.cpp.obj: C:/Users/PC/Desktop/CSOPESY\ HW\ 3\ GROUP/src/ShellUI.cpp
+CMakeFiles/CSOPESY_Desktop_OS.dir/src/ShellUI.cpp.obj: CMakeFiles/CSOPESY_Desktop_OS.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CSOPESY_Desktop_OS.dir/src/ShellUI.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CSOPESY_Desktop_OS.dir/src/ShellUI.cpp.obj -MF CMakeFiles\CSOPESY_Desktop_OS.dir\src\ShellUI.cpp.obj.d -o CMakeFiles\CSOPESY_Desktop_OS.dir\src\ShellUI.cpp.obj -c "C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\src\ShellUI.cpp"
+
+CMakeFiles/CSOPESY_Desktop_OS.dir/src/ShellUI.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CSOPESY_Desktop_OS.dir/src/ShellUI.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\src\ShellUI.cpp" > CMakeFiles\CSOPESY_Desktop_OS.dir\src\ShellUI.cpp.i
+
+CMakeFiles/CSOPESY_Desktop_OS.dir/src/ShellUI.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CSOPESY_Desktop_OS.dir/src/ShellUI.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\src\ShellUI.cpp" -o CMakeFiles\CSOPESY_Desktop_OS.dir\src\ShellUI.cpp.s
+
+CMakeFiles/CSOPESY_Desktop_OS.dir/src/TaskManager.cpp.obj: CMakeFiles/CSOPESY_Desktop_OS.dir/flags.make
+CMakeFiles/CSOPESY_Desktop_OS.dir/src/TaskManager.cpp.obj: CMakeFiles/CSOPESY_Desktop_OS.dir/includes_CXX.rsp
+CMakeFiles/CSOPESY_Desktop_OS.dir/src/TaskManager.cpp.obj: C:/Users/PC/Desktop/CSOPESY\ HW\ 3\ GROUP/src/TaskManager.cpp
+CMakeFiles/CSOPESY_Desktop_OS.dir/src/TaskManager.cpp.obj: CMakeFiles/CSOPESY_Desktop_OS.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/CSOPESY_Desktop_OS.dir/src/TaskManager.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CSOPESY_Desktop_OS.dir/src/TaskManager.cpp.obj -MF CMakeFiles\CSOPESY_Desktop_OS.dir\src\TaskManager.cpp.obj.d -o CMakeFiles\CSOPESY_Desktop_OS.dir\src\TaskManager.cpp.obj -c "C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\src\TaskManager.cpp"
+
+CMakeFiles/CSOPESY_Desktop_OS.dir/src/TaskManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CSOPESY_Desktop_OS.dir/src/TaskManager.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\src\TaskManager.cpp" > CMakeFiles\CSOPESY_Desktop_OS.dir\src\TaskManager.cpp.i
+
+CMakeFiles/CSOPESY_Desktop_OS.dir/src/TaskManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CSOPESY_Desktop_OS.dir/src/TaskManager.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\src\TaskManager.cpp" -o CMakeFiles\CSOPESY_Desktop_OS.dir\src\TaskManager.cpp.s
+
 CMakeFiles/CSOPESY_Desktop_OS.dir/src/main.cpp.obj: CMakeFiles/CSOPESY_Desktop_OS.dir/flags.make
 CMakeFiles/CSOPESY_Desktop_OS.dir/src/main.cpp.obj: CMakeFiles/CSOPESY_Desktop_OS.dir/includes_CXX.rsp
 CMakeFiles/CSOPESY_Desktop_OS.dir/src/main.cpp.obj: C:/Users/PC/Desktop/CSOPESY\ HW\ 3\ GROUP/src/main.cpp
 CMakeFiles/CSOPESY_Desktop_OS.dir/src/main.cpp.obj: CMakeFiles/CSOPESY_Desktop_OS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CSOPESY_Desktop_OS.dir/src/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/CSOPESY_Desktop_OS.dir/src/main.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CSOPESY_Desktop_OS.dir/src/main.cpp.obj -MF CMakeFiles\CSOPESY_Desktop_OS.dir\src\main.cpp.obj.d -o CMakeFiles\CSOPESY_Desktop_OS.dir\src\main.cpp.obj -c "C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\src\main.cpp"
 
 CMakeFiles/CSOPESY_Desktop_OS.dir/src/main.cpp.i: cmake_force
@@ -90,7 +135,7 @@ CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui.cpp.obj: CMakeFiles/CSOPESY_Deskto
 CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui.cpp.obj: CMakeFiles/CSOPESY_Desktop_OS.dir/includes_CXX.rsp
 CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui.cpp.obj: C:/Users/PC/Desktop/CSOPESY\ HW\ 3\ GROUP/imgui/imgui.cpp
 CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui.cpp.obj: CMakeFiles/CSOPESY_Desktop_OS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui.cpp.obj -MF CMakeFiles\CSOPESY_Desktop_OS.dir\imgui\imgui.cpp.obj.d -o CMakeFiles\CSOPESY_Desktop_OS.dir\imgui\imgui.cpp.obj -c "C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\imgui\imgui.cpp"
 
 CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui.cpp.i: cmake_force
@@ -105,7 +150,7 @@ CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_demo.cpp.obj: CMakeFiles/CSOPESY_D
 CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_demo.cpp.obj: CMakeFiles/CSOPESY_Desktop_OS.dir/includes_CXX.rsp
 CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_demo.cpp.obj: C:/Users/PC/Desktop/CSOPESY\ HW\ 3\ GROUP/imgui/imgui_demo.cpp
 CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_demo.cpp.obj: CMakeFiles/CSOPESY_Desktop_OS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_demo.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_demo.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_demo.cpp.obj -MF CMakeFiles\CSOPESY_Desktop_OS.dir\imgui\imgui_demo.cpp.obj.d -o CMakeFiles\CSOPESY_Desktop_OS.dir\imgui\imgui_demo.cpp.obj -c "C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\imgui\imgui_demo.cpp"
 
 CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_demo.cpp.i: cmake_force
@@ -120,7 +165,7 @@ CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_draw.cpp.obj: CMakeFiles/CSOPESY_D
 CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_draw.cpp.obj: CMakeFiles/CSOPESY_Desktop_OS.dir/includes_CXX.rsp
 CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_draw.cpp.obj: C:/Users/PC/Desktop/CSOPESY\ HW\ 3\ GROUP/imgui/imgui_draw.cpp
 CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_draw.cpp.obj: CMakeFiles/CSOPESY_Desktop_OS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_draw.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_draw.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_draw.cpp.obj -MF CMakeFiles\CSOPESY_Desktop_OS.dir\imgui\imgui_draw.cpp.obj.d -o CMakeFiles\CSOPESY_Desktop_OS.dir\imgui\imgui_draw.cpp.obj -c "C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\imgui\imgui_draw.cpp"
 
 CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_draw.cpp.i: cmake_force
@@ -135,7 +180,7 @@ CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_impl_glfw.cpp.obj: CMakeFiles/CSOP
 CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_impl_glfw.cpp.obj: CMakeFiles/CSOPESY_Desktop_OS.dir/includes_CXX.rsp
 CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_impl_glfw.cpp.obj: C:/Users/PC/Desktop/CSOPESY\ HW\ 3\ GROUP/imgui/imgui_impl_glfw.cpp
 CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_impl_glfw.cpp.obj: CMakeFiles/CSOPESY_Desktop_OS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_impl_glfw.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_impl_glfw.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_impl_glfw.cpp.obj -MF CMakeFiles\CSOPESY_Desktop_OS.dir\imgui\imgui_impl_glfw.cpp.obj.d -o CMakeFiles\CSOPESY_Desktop_OS.dir\imgui\imgui_impl_glfw.cpp.obj -c "C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\imgui\imgui_impl_glfw.cpp"
 
 CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_impl_glfw.cpp.i: cmake_force
@@ -150,7 +195,7 @@ CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_impl_opengl3.cpp.obj: CMakeFiles/C
 CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_impl_opengl3.cpp.obj: CMakeFiles/CSOPESY_Desktop_OS.dir/includes_CXX.rsp
 CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_impl_opengl3.cpp.obj: C:/Users/PC/Desktop/CSOPESY\ HW\ 3\ GROUP/imgui/imgui_impl_opengl3.cpp
 CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_impl_opengl3.cpp.obj: CMakeFiles/CSOPESY_Desktop_OS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_impl_opengl3.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_impl_opengl3.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_impl_opengl3.cpp.obj -MF CMakeFiles\CSOPESY_Desktop_OS.dir\imgui\imgui_impl_opengl3.cpp.obj.d -o CMakeFiles\CSOPESY_Desktop_OS.dir\imgui\imgui_impl_opengl3.cpp.obj -c "C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\imgui\imgui_impl_opengl3.cpp"
 
 CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_impl_opengl3.cpp.i: cmake_force
@@ -165,7 +210,7 @@ CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_tables.cpp.obj: CMakeFiles/CSOPESY
 CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_tables.cpp.obj: CMakeFiles/CSOPESY_Desktop_OS.dir/includes_CXX.rsp
 CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_tables.cpp.obj: C:/Users/PC/Desktop/CSOPESY\ HW\ 3\ GROUP/imgui/imgui_tables.cpp
 CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_tables.cpp.obj: CMakeFiles/CSOPESY_Desktop_OS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_tables.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_tables.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_tables.cpp.obj -MF CMakeFiles\CSOPESY_Desktop_OS.dir\imgui\imgui_tables.cpp.obj.d -o CMakeFiles\CSOPESY_Desktop_OS.dir\imgui\imgui_tables.cpp.obj -c "C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\imgui\imgui_tables.cpp"
 
 CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_tables.cpp.i: cmake_force
@@ -180,7 +225,7 @@ CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_widgets.cpp.obj: CMakeFiles/CSOPES
 CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_widgets.cpp.obj: CMakeFiles/CSOPESY_Desktop_OS.dir/includes_CXX.rsp
 CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_widgets.cpp.obj: C:/Users/PC/Desktop/CSOPESY\ HW\ 3\ GROUP/imgui/imgui_widgets.cpp
 CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_widgets.cpp.obj: CMakeFiles/CSOPESY_Desktop_OS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_widgets.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_widgets.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_widgets.cpp.obj -MF CMakeFiles\CSOPESY_Desktop_OS.dir\imgui\imgui_widgets.cpp.obj.d -o CMakeFiles\CSOPESY_Desktop_OS.dir\imgui\imgui_widgets.cpp.obj -c "C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\imgui\imgui_widgets.cpp"
 
 CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_widgets.cpp.i: cmake_force
@@ -193,6 +238,9 @@ CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_widgets.cpp.s: cmake_force
 
 # Object files for target CSOPESY_Desktop_OS
 CSOPESY_Desktop_OS_OBJECTS = \
+"CMakeFiles/CSOPESY_Desktop_OS.dir/src/Desktop.cpp.obj" \
+"CMakeFiles/CSOPESY_Desktop_OS.dir/src/ShellUI.cpp.obj" \
+"CMakeFiles/CSOPESY_Desktop_OS.dir/src/TaskManager.cpp.obj" \
 "CMakeFiles/CSOPESY_Desktop_OS.dir/src/main.cpp.obj" \
 "CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui.cpp.obj" \
 "CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_demo.cpp.obj" \
@@ -205,6 +253,9 @@ CSOPESY_Desktop_OS_OBJECTS = \
 # External object files for target CSOPESY_Desktop_OS
 CSOPESY_Desktop_OS_EXTERNAL_OBJECTS =
 
+CSOPESY_Desktop_OS.exe: CMakeFiles/CSOPESY_Desktop_OS.dir/src/Desktop.cpp.obj
+CSOPESY_Desktop_OS.exe: CMakeFiles/CSOPESY_Desktop_OS.dir/src/ShellUI.cpp.obj
+CSOPESY_Desktop_OS.exe: CMakeFiles/CSOPESY_Desktop_OS.dir/src/TaskManager.cpp.obj
 CSOPESY_Desktop_OS.exe: CMakeFiles/CSOPESY_Desktop_OS.dir/src/main.cpp.obj
 CSOPESY_Desktop_OS.exe: CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui.cpp.obj
 CSOPESY_Desktop_OS.exe: CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_demo.cpp.obj
@@ -218,7 +269,7 @@ CSOPESY_Desktop_OS.exe: C:/msys64/ucrt64/lib/libglfw3.dll.a
 CSOPESY_Desktop_OS.exe: CMakeFiles/CSOPESY_Desktop_OS.dir/linkLibs.rsp
 CSOPESY_Desktop_OS.exe: CMakeFiles/CSOPESY_Desktop_OS.dir/objects1.rsp
 CSOPESY_Desktop_OS.exe: CMakeFiles/CSOPESY_Desktop_OS.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable CSOPESY_Desktop_OS.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\PC\Desktop\CSOPESY HW 3 GROUP\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable CSOPESY_Desktop_OS.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\CSOPESY_Desktop_OS.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

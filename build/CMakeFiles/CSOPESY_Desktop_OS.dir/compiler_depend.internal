@@ -1513,12 +1513,22 @@ CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_widgets.cpp.obj
  C:/Users/PC/Desktop/CSOPESY HW 3 GROUP/imgui/imgui_internal.h
  C:/Users/PC/Desktop/CSOPESY HW 3 GROUP/imgui/imstb_textedit.h
 
+CMakeFiles/CSOPESY_Desktop_OS.dir/src/Desktop.cpp.obj
+ C:/Users/PC/Desktop/CSOPESY HW 3 GROUP/src/Desktop.cpp
+
+CMakeFiles/CSOPESY_Desktop_OS.dir/src/ShellUI.cpp.obj
+ C:/Users/PC/Desktop/CSOPESY HW 3 GROUP/src/ShellUI.cpp
+
+CMakeFiles/CSOPESY_Desktop_OS.dir/src/TaskManager.cpp.obj
+ C:/Users/PC/Desktop/CSOPESY HW 3 GROUP/src/TaskManager.cpp
+
 CMakeFiles/CSOPESY_Desktop_OS.dir/src/main.cpp.obj
  C:/Users/PC/Desktop/CSOPESY HW 3 GROUP/src/main.cpp
  C:/Users/PC/Desktop/CSOPESY HW 3 GROUP/imgui/imconfig.h
  C:/Users/PC/Desktop/CSOPESY HW 3 GROUP/imgui/imgui.h
  C:/Users/PC/Desktop/CSOPESY HW 3 GROUP/imgui/imgui_impl_glfw.h
  C:/Users/PC/Desktop/CSOPESY HW 3 GROUP/imgui/imgui_impl_opengl3.h
+ C:/Users/PC/Desktop/CSOPESY HW 3 GROUP/include/AppState.h
  C:/msys64/ucrt64/include/GL/gl.h
  C:/msys64/ucrt64/include/GLFW/glfw3.h
  C:/msys64/ucrt64/include/_mingw.h

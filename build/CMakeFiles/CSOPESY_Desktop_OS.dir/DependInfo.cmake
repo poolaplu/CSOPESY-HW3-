@@ -15,6 +15,9 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/PC/Desktop/CSOPESY HW 3 GROUP/imgui/imgui_impl_opengl3.cpp" "CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_impl_opengl3.cpp.obj" "gcc" "CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_impl_opengl3.cpp.obj.d"
   "C:/Users/PC/Desktop/CSOPESY HW 3 GROUP/imgui/imgui_tables.cpp" "CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_tables.cpp.obj" "gcc" "CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_tables.cpp.obj.d"
   "C:/Users/PC/Desktop/CSOPESY HW 3 GROUP/imgui/imgui_widgets.cpp" "CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_widgets.cpp.obj" "gcc" "CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_widgets.cpp.obj.d"
+  "C:/Users/PC/Desktop/CSOPESY HW 3 GROUP/src/Desktop.cpp" "CMakeFiles/CSOPESY_Desktop_OS.dir/src/Desktop.cpp.obj" "gcc" "CMakeFiles/CSOPESY_Desktop_OS.dir/src/Desktop.cpp.obj.d"
+  "C:/Users/PC/Desktop/CSOPESY HW 3 GROUP/src/ShellUI.cpp" "CMakeFiles/CSOPESY_Desktop_OS.dir/src/ShellUI.cpp.obj" "gcc" "CMakeFiles/CSOPESY_Desktop_OS.dir/src/ShellUI.cpp.obj.d"
+  "C:/Users/PC/Desktop/CSOPESY HW 3 GROUP/src/TaskManager.cpp" "CMakeFiles/CSOPESY_Desktop_OS.dir/src/TaskManager.cpp.obj" "gcc" "CMakeFiles/CSOPESY_Desktop_OS.dir/src/TaskManager.cpp.obj.d"
   "C:/Users/PC/Desktop/CSOPESY HW 3 GROUP/src/main.cpp" "CMakeFiles/CSOPESY_Desktop_OS.dir/src/main.cpp.obj" "gcc" "CMakeFiles/CSOPESY_Desktop_OS.dir/src/main.cpp.obj.d"
   )
 

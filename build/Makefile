@@ -296,6 +296,78 @@ imgui/imgui_widgets.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CSOPESY_Desktop_OS.dir\build.make CMakeFiles/CSOPESY_Desktop_OS.dir/imgui/imgui_widgets.cpp.s
 .PHONY : imgui/imgui_widgets.cpp.s
 
+src/Desktop.obj: src/Desktop.cpp.obj
+.PHONY : src/Desktop.obj
+
+# target to build an object file
+src/Desktop.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CSOPESY_Desktop_OS.dir\build.make CMakeFiles/CSOPESY_Desktop_OS.dir/src/Desktop.cpp.obj
+.PHONY : src/Desktop.cpp.obj
+
+src/Desktop.i: src/Desktop.cpp.i
+.PHONY : src/Desktop.i
+
+# target to preprocess a source file
+src/Desktop.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CSOPESY_Desktop_OS.dir\build.make CMakeFiles/CSOPESY_Desktop_OS.dir/src/Desktop.cpp.i
+.PHONY : src/Desktop.cpp.i
+
+src/Desktop.s: src/Desktop.cpp.s
+.PHONY : src/Desktop.s
+
+# target to generate assembly for a file
+src/Desktop.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CSOPESY_Desktop_OS.dir\build.make CMakeFiles/CSOPESY_Desktop_OS.dir/src/Desktop.cpp.s
+.PHONY : src/Desktop.cpp.s
+
+src/ShellUI.obj: src/ShellUI.cpp.obj
+.PHONY : src/ShellUI.obj
+
+# target to build an object file
+src/ShellUI.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CSOPESY_Desktop_OS.dir\build.make CMakeFiles/CSOPESY_Desktop_OS.dir/src/ShellUI.cpp.obj
+.PHONY : src/ShellUI.cpp.obj
+
+src/ShellUI.i: src/ShellUI.cpp.i
+.PHONY : src/ShellUI.i
+
+# target to preprocess a source file
+src/ShellUI.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CSOPESY_Desktop_OS.dir\build.make CMakeFiles/CSOPESY_Desktop_OS.dir/src/ShellUI.cpp.i
+.PHONY : src/ShellUI.cpp.i
+
+src/ShellUI.s: src/ShellUI.cpp.s
+.PHONY : src/ShellUI.s
+
+# target to generate assembly for a file
+src/ShellUI.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CSOPESY_Desktop_OS.dir\build.make CMakeFiles/CSOPESY_Desktop_OS.dir/src/ShellUI.cpp.s
+.PHONY : src/ShellUI.cpp.s
+
+src/TaskManager.obj: src/TaskManager.cpp.obj
+.PHONY : src/TaskManager.obj
+
+# target to build an object file
+src/TaskManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CSOPESY_Desktop_OS.dir\build.make CMakeFiles/CSOPESY_Desktop_OS.dir/src/TaskManager.cpp.obj
+.PHONY : src/TaskManager.cpp.obj
+
+src/TaskManager.i: src/TaskManager.cpp.i
+.PHONY : src/TaskManager.i
+
+# target to preprocess a source file
+src/TaskManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CSOPESY_Desktop_OS.dir\build.make CMakeFiles/CSOPESY_Desktop_OS.dir/src/TaskManager.cpp.i
+.PHONY : src/TaskManager.cpp.i
+
+src/TaskManager.s: src/TaskManager.cpp.s
+.PHONY : src/TaskManager.s
+
+# target to generate assembly for a file
+src/TaskManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CSOPESY_Desktop_OS.dir\build.make CMakeFiles/CSOPESY_Desktop_OS.dir/src/TaskManager.cpp.s
+.PHONY : src/TaskManager.cpp.s
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -350,6 +422,15 @@ help:
 	@echo ... imgui/imgui_widgets.obj
 	@echo ... imgui/imgui_widgets.i
 	@echo ... imgui/imgui_widgets.s
+	@echo ... src/Desktop.obj
+	@echo ... src/Desktop.i
+	@echo ... src/Desktop.s
+	@echo ... src/ShellUI.obj
+	@echo ... src/ShellUI.i
+	@echo ... src/ShellUI.s
+	@echo ... src/TaskManager.obj
+	@echo ... src/TaskManager.i
+	@echo ... src/TaskManager.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

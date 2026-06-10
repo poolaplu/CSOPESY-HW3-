@@ -4,17 +4,21 @@
 #include "imgui_impl_glfw.h"
 #include "imgui_impl_opengl3.h"
 
+// NEW: Include your shared bulletin board
+#include "AppState.h" 
+
 // --- Placeholder functions for your team's components ---
+// NEW: Member 1 doesn't need the state, but Member 2 and 3 do.
 void RenderDesktop() {
-    // Role 1 (Core Architect) will build the background, clock, and PWR button here.
+    // Role 1 will build the background, clock, and PWR button here.
 }
 
-void RenderTaskbar() {
-    // Role 2 (Window Manager) will build the bottom taskbar and app buttons here.
+void RenderTaskbar(AppState& state) {
+    // Role 2 will build the bottom taskbar and app buttons here.
 }
 
-void RenderTaskManager() {
-    // Role 3 (Analyst) will build the Windows-style Task Manager table here.
+void RenderTaskManager(AppState& state) {
+    // Role 3 will build the Windows-style Task Manager table here.
 }
 
 int main() {
@@ -24,7 +28,7 @@ int main() {
         return -1;
     }
 
-    // Set OpenGL version (Adjust this depending on your target system, 3.0 is a safe baseline)
+    // Set OpenGL version
     const char* glsl_version = "#version 130";
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 0);
@@ -44,16 +48,19 @@ int main() {
     ImGui::CreateContext();
     ImGuiIO& io = ImGui::GetIO(); (void)io;
     
-    // Setup Dear ImGui style (Dark mode by default)
+    // Setup Dear ImGui style
     ImGui::StyleColorsDark();
 
     // Setup Platform/Renderer bindings
     ImGui_ImplGlfw_InitForOpenGL(window, true);
     ImGui_ImplOpenGL3_Init(glsl_version);
 
+    // NEW: Create the master state tracker right before the loop starts
+    AppState globalState;
+
     // 4. The Main Render Loop
     while (!glfwWindowShouldClose(window)) {
-        // Poll and handle events (inputs, window resize, etc.)
+        // Poll and handle events
         glfwPollEvents();
 
         // Start the ImGui frame
@@ -65,9 +72,10 @@ int main() {
         // TEAM INJECTION POINTS - Render UI Here
         // ==========================================
         
-        RenderDesktop();      // Base layer goes first
-        RenderTaskbar();      // UI elements go on top
-        RenderTaskManager();  // Apps and windows 
+        // NEW: Pass the state to the functions that need it
+        RenderDesktop();      
+        RenderTaskbar(globalState);      
+        RenderTaskManager(globalState);  
 
         // ==========================================
 

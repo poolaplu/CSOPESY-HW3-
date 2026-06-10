@@ -154,4 +154,5 @@ CMakeFiles/CSOPESY_Desktop_OS.dir/src/main.cpp.obj: \
  C:/msys64/ucrt64/include/sec_api/string_s.h \
  C:/msys64/ucrt64/include/assert.h \
  C:/Users/PC/Desktop/CSOPES~1/imgui/imgui_impl_glfw.h \
- C:/Users/PC/Desktop/CSOPES~1/imgui/imgui_impl_opengl3.h
+ C:/Users/PC/Desktop/CSOPES~1/imgui/imgui_impl_opengl3.h \
+ C:/Users/PC/Desktop/CSOPES~1/include/AppState.h
