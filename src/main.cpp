@@ -6,15 +6,12 @@
 
 // NEW: Include your shared bulletin board
 #include "AppState.h" 
+#include "ShellUI.h"
 
 // --- Placeholder functions for your team's components ---
 // NEW: Member 1 doesn't need the state, but Member 2 and 3 do.
 void RenderDesktop() {
     // Role 1 will build the background, clock, and PWR button here.
-}
-
-void RenderTaskbar(AppState& state) {
-    // Role 2 will build the bottom taskbar and app buttons here.
 }
 
 void RenderTaskManager(AppState& state) {
