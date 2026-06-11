@@ -1,6 +1,23 @@
 #pragma once
-#include "AppState.h"
-#include "ShellUI.h"
+#include "AWindow.h"
 
-// The main function that Member 1's render loop will call
-void RenderTaskbar(AppState& state);
+class Taskbar : public AWindow {
+public:
+    Taskbar() : AWindow("Taskbar") {
+        // The taskbar is a persistent system service, so it starts visible
+        isVisible = true; 
+    }
+    void draw() override;
+};
+
+class SystemInfoWindow : public AWindow {
+public:
+    SystemInfoWindow() : AWindow("System Information") {}
+    void draw() override;
+};
+
+class FileExplorerWindow : public AWindow {
+public:
+    FileExplorerWindow() : AWindow("File Explorer") {}
+    void draw() override;
+};
