@@ -10,7 +10,7 @@
 // --------------------------------------------------------
 
 // Taskbar Constructor
-Taskbar::Taskbar() : AWindow("Taskbar") {
+Taskbar::Taskbar(GLFWwindow* window) : AWindow("Taskbar"), appWindow(window) {
     isVisible = true; 
     
     // Load your actual .png files here! 
@@ -85,6 +85,24 @@ void Taskbar::draw() {
         if (ImGui::Button("Task Manager", ImVec2(120, 30))) { UIManager::getInstance().toggleWindow("TaskManager"); }
     }
 
+    float buttonWidth = 50.0f;
+    float buttonHeight = 30.0f;
+    float rightPadding = 12.0f;
+
+    ImGui::SameLine();
+    ImGui::SetCursorPosX(ImGui::GetWindowWidth() - buttonWidth - rightPadding);
+
+    ImGui::PushStyleColor(ImGuiCol_Button, ImVec4(0.15f, 0.05f, 0.05f, 1.0f));
+    ImGui::PushStyleColor(ImGuiCol_ButtonHovered, ImVec4(0.55f, 0.05f, 0.05f, 1.0f));
+    ImGui::PushStyleColor(ImGuiCol_ButtonActive, ImVec4(0.80f, 0.05f, 0.05f, 1.0f));
+    ImGui::PushStyleColor(ImGuiCol_Text, ImVec4(1.0f, 0.25f, 0.25f, 1.0f));
+
+    if (ImGui::Button("PWR", ImVec2(buttonWidth, buttonHeight))) {
+        glfwSetWindowShouldClose(appWindow, GLFW_TRUE);
+    }
+
+    ImGui::PopStyleColor(4); 
+    
     ImGui::End();
     ImGui::PopStyleVar(2); 
 }

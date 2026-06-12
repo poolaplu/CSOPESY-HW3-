@@ -7,16 +7,16 @@
 // --------------------------------------------------------
 class Taskbar : public AWindow {
 public:
-    Taskbar(); // Constructor declaration
+    Taskbar(GLFWwindow* window);
     void draw() override;
 
 private:
-    // Variables to store the loaded image IDs
+    GLFWwindow* appWindow;
+
     GLuint sysInfoIcon = 0;
     GLuint fileExpIcon = 0;
     GLuint taskMgrIcon = 0;
-    
-    // Helper function to load the images
+
     bool loadTexture(const char* filename, GLuint* out_texture);
 };
 

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <memory>
 #include <GLFW/glfw3.h>
 #include "imgui.h"
 #include "imgui_impl_glfw.h"
@@ -7,6 +8,7 @@
 // NEW: Object-Oriented Architecture
 #include "UIManager.h"
 #include "ShellUI.h"
+#include "Desktop.h"
 
 int main() {
     // 1. Initialize GLFW
@@ -29,7 +31,9 @@ int main() {
     // ==========================================
     // Phase 3: Start System Services - Register Windows
     // ==========================================
-    auto taskbar = std::make_shared<Taskbar>();
+    Desktop desktop;
+
+    auto taskbar = std::make_shared<Taskbar>(window);
     auto sysInfo = std::make_shared<SystemInfoWindow>();
     auto fileExp = std::make_shared<FileExplorerWindow>();
 
@@ -49,6 +53,8 @@ int main() {
 
         // Let the UIManager handle all registered windows!
         UIManager::getInstance().renderAllWindows();
+
+        desktop.draw(window);
 
         ImGui::Render();
         int display_w, display_h;
