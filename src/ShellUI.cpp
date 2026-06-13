@@ -184,7 +184,7 @@ void SystemInfoWindow::draw() {
     ImGui::Separator();
 
     ImGui::Text("Manufacturer: S07_GRP11");
-    ImGui::Text("Creators: Widenmar Embuscado, Jandeil Dural, Luke Regaldo");
+    ImGui::Text("Creators: Ral Embuscado, Jandeil Dural, Alain Chiong");
     ImGui::Text("Environment: Taft Node");
 
     ImGui::Spacing();

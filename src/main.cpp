@@ -9,6 +9,7 @@
 #include "UIManager.h"
 #include "ShellUI.h"
 #include "Desktop.h"
+#include "TaskManager.h"
 
 int main() {
     // 1. Initialize GLFW
@@ -36,10 +37,12 @@ int main() {
     auto taskbar = std::make_shared<Taskbar>(window);
     auto sysInfo = std::make_shared<SystemInfoWindow>();
     auto fileExp = std::make_shared<FileExplorerWindow>();
+    auto taskMgr = std::make_shared<TaskManagerWindow>();
 
     UIManager::getInstance().registerWindow("Taskbar", taskbar);
     UIManager::getInstance().registerWindow("SystemInfo", sysInfo);
     UIManager::getInstance().registerWindow("FileExplorer", fileExp);
+    UIManager::getInstance().registerWindow("TaskManager", taskMgr);
 
     // ==========================================
     // Phase 4: The Main Render Loop
