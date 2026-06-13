@@ -11,7 +11,7 @@ struct ProcessInfo{
 };
 
 // Simple function to simulate fluctuating metrics
-void UpdateProcessMetrics(std::vector<ProcessInfo>& processes) {
+inline void UpdateProcessMetrics(std::vector<ProcessInfo>& processes) {
     for (auto& proc : processes) {
         // Random slight fluctuation between -1.5% and +1.5%
         float cpuDelta = ((rand() % 300) - 150) / 100.0f;
