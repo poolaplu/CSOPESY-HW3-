@@ -7,7 +7,6 @@ public:
     AWindow(const std::string& name) : windowName(name), isVisible(false) {}
     virtual ~AWindow() = default;
     
-    // Pure virtual: subclasses must implement
     virtual void draw() = 0; 
 
     void show() { isVisible = true; }

@@ -11,7 +11,6 @@
 #include "TaskManager.h"
 
 int main() {
-    // 1. Initialize GLFW
     if (!glfwInit()) return -1;
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 0);
@@ -21,7 +20,6 @@ int main() {
     glfwMakeContextCurrent(window);
     glfwSwapInterval(1); 
 
-    // 2. Initialize Dear ImGui
     IMGUI_CHECKVERSION();
     ImGui::CreateContext();
     ImGui_ImplGlfw_InitForOpenGL(window, true);
@@ -48,7 +46,6 @@ int main() {
         ImGui_ImplGlfw_NewFrame();
         ImGui::NewFrame();
 
-        // Let the UIManager handle all registered windows!
         UIManager::getInstance().renderAllWindows();
 
         desktop.draw(window);
@@ -63,7 +60,6 @@ int main() {
         glfwSwapBuffers(window);
     }
 
-    // 5. Cleanup
     ImGui_ImplOpenGL3_Shutdown();
     ImGui_ImplGlfw_Shutdown();
     ImGui::DestroyContext();

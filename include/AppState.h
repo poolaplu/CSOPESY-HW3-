@@ -5,7 +5,6 @@
 struct AppState {
     bool showTaskManager = false;
     bool showDesktop = true;
-    // if ever may need pa iadd, lagay dito
 };
 
-#endif // APP_STATE_H
+#endif 

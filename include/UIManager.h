@@ -6,7 +6,6 @@
 
 class UIManager {
 public:
-    // Singleton instance
     static UIManager& getInstance() {
         static UIManager instance;
         return instance;
@@ -24,7 +23,6 @@ public:
         if (windows.find(name) != windows.end()) windows[name]->hide();
     }
 
-    // Helper for taskbar buttons
     void toggleWindow(const std::string& name) {
         if (windows.find(name) != windows.end()) {
             if (windows[name]->isShown()) windows[name]->hide();

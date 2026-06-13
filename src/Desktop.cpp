@@ -11,20 +11,12 @@
 #define GL_CLAMP_TO_EDGE 0x812F
 #endif
 
-// ------------------------------------------------------------
-// Background image paths
-// ------------------------------------------------------------
-// Your image is in the main project folder as WindowsBg.png.
-// If the program runs from the build folder, "../WindowsBg.png" should work.
 static const char* BACKGROUND_PATHS[] = {
     "WindowsBg.png",
     "../WindowsBg.png",
     "../../WindowsBg.png"
 };
 
-// ------------------------------------------------------------
-// Constructor
-// ------------------------------------------------------------
 Desktop::Desktop()
     : backgroundTexture(0),
       backgroundWidth(0),
@@ -33,9 +25,6 @@ Desktop::Desktop()
 {
 }
 
-// ------------------------------------------------------------
-// Destructor
-// ------------------------------------------------------------
 Desktop::~Desktop()
 {
     if (backgroundTexture != 0) {
@@ -44,9 +33,6 @@ Desktop::~Desktop()
     }
 }
 
-// ------------------------------------------------------------
-// Load background PNG/JPG once
-// ------------------------------------------------------------
 void Desktop::loadBackground()
 {
     if (triedLoadingBackground) {
@@ -98,9 +84,6 @@ void Desktop::loadBackground()
     }
 }
 
-// ------------------------------------------------------------
-// Draw desktop background
-// ------------------------------------------------------------
 void Desktop::drawBackground()
 {
     ImGuiViewport* viewport = ImGui::GetMainViewport();
@@ -115,14 +98,12 @@ void Desktop::drawBackground()
     );
 
     if (backgroundTexture != 0) {
-        // Stretch image to full application window
         drawList->AddImage(
             (ImTextureID)(intptr_t)backgroundTexture,
             screenPos,
             screenEnd
         );
     } else {
-        // Fallback background if WindowsBg.png fails to load
         drawList->AddRectFilledMultiColor(
             screenPos,
             screenEnd,
@@ -132,7 +113,6 @@ void Desktop::drawBackground()
             IM_COL32(5, 10, 25, 255)
         );
 
-        // Simple grid pattern
         for (float x = screenPos.x; x < screenEnd.x; x += 40.0f) {
             drawList->AddLine(
                 ImVec2(x, screenPos.y),
@@ -151,10 +131,6 @@ void Desktop::drawBackground()
     }
 }
 
-// ------------------------------------------------------------
-// Draw real-time clock
-// Format: Thursday, April 30, 2026 | 05:25 PM
-// ------------------------------------------------------------
 void Desktop::drawClock()
 {
     char dayName[32];
@@ -205,7 +181,6 @@ void Desktop::drawClock()
         boxMin.y + textSize.y + boxPaddingY * 2.0f
     );
 
-    // Black transparent clock box
     drawList->AddRectFilled(
         boxMin,
         boxMax,
@@ -213,7 +188,6 @@ void Desktop::drawClock()
         6.0f
     );
 
-    // Clock text
     drawList->AddText(
         ImVec2(boxMin.x + boxPaddingX, boxMin.y + boxPaddingY),
         IM_COL32(235, 235, 235, 255),
@@ -221,13 +195,8 @@ void Desktop::drawClock()
     );
 }
 
-// ------------------------------------------------------------
-// Main draw function
-// Called every frame from main.cpp
-// ------------------------------------------------------------
 void Desktop::draw(GLFWwindow* window)
 {
-    // window is not used here anymore because PWR is now in Taskbar.
     (void)window;
 
     loadBackground();

@@ -1,7 +1,6 @@
 #include "ShellUI.h"
 #include "UIManager.h"
 
-// 1. Tell stb_image to create the implementation here
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
 
@@ -9,15 +8,10 @@
 #define GL_CLAMP_TO_EDGE 0x812F
 #endif
 
-// --------------------------------------------------------
-// TASKBAR IMPLEMENTATION
-// --------------------------------------------------------
 
-// Taskbar Constructor
 Taskbar::Taskbar(GLFWwindow* window) : AWindow("Taskbar"), appWindow(window) {
     isVisible = true; 
     
-    // Load your actual .png files here! 
     loadTexture("sysinfo_icon.png", &sysInfoIcon) ||
     loadTexture("../sysinfo_icon.png", &sysInfoIcon) ||
     loadTexture("../../sysinfo_icon.png", &sysInfoIcon);
@@ -35,7 +29,6 @@ Taskbar::Taskbar(GLFWwindow* window) : AWindow("Taskbar"), appWindow(window) {
     loadTexture("../../power-on.png", &pwrIcon);
 }
 
-// Texture Loader Helper
 bool Taskbar::loadTexture(const char* filename, GLuint* out_texture) {
     int image_width = 0, image_height = 0, channels = 0;
 
@@ -81,7 +74,6 @@ bool Taskbar::loadTexture(const char* filename, GLuint* out_texture) {
     return true;
 }
 
-// Taskbar Draw Function
 void Taskbar::draw() {
     if (!isVisible) return;
 
@@ -173,9 +165,6 @@ void Taskbar::draw() {
     ImGui::PopStyleVar(2); 
 }
 
-// --------------------------------------------------------
-// CUSTOM APP WINDOW IMPLEMENTATIONS
-// --------------------------------------------------------
 
 void SystemInfoWindow::draw() {
     if (!beginWindow()) return;
