@@ -16,7 +16,8 @@ private:
     GLuint sysInfoIcon = 0;
     GLuint fileExpIcon = 0;
     GLuint taskMgrIcon = 0;
-
+    GLuint pwrIcon = 0;
+    
     bool loadTexture(const char* filename, GLuint* out_texture);
 };
 

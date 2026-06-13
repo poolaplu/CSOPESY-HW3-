@@ -5,6 +5,10 @@
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
 
+#ifndef GL_CLAMP_TO_EDGE
+#define GL_CLAMP_TO_EDGE 0x812F
+#endif
+
 // --------------------------------------------------------
 // TASKBAR IMPLEMENTATION
 // --------------------------------------------------------
@@ -14,23 +18,63 @@ Taskbar::Taskbar(GLFWwindow* window) : AWindow("Taskbar"), appWindow(window) {
     isVisible = true; 
     
     // Load your actual .png files here! 
-    loadTexture("sysinfo_icon.png", &sysInfoIcon);
-    loadTexture("folder_icon.png", &fileExpIcon);
-    loadTexture("taskmgr_icon.png", &taskMgrIcon);
+    loadTexture("sysinfo_icon.png", &sysInfoIcon) ||
+    loadTexture("../sysinfo_icon.png", &sysInfoIcon) ||
+    loadTexture("../../sysinfo_icon.png", &sysInfoIcon);
+
+    loadTexture("folder_icon.png", &fileExpIcon) ||
+    loadTexture("../folder_icon.png", &fileExpIcon) ||
+    loadTexture("../../folder_icon.png", &fileExpIcon);
+
+    loadTexture("taskmgr_icon.png", &taskMgrIcon) ||
+    loadTexture("../taskmgr_icon.png", &taskMgrIcon) ||
+    loadTexture("../../taskmgr_icon.png", &taskMgrIcon);
+
+    loadTexture("power-on.png", &pwrIcon) ||
+    loadTexture("../power-on.png", &pwrIcon) ||
+    loadTexture("../../power-on.png", &pwrIcon);
 }
 
 // Texture Loader Helper
 bool Taskbar::loadTexture(const char* filename, GLuint* out_texture) {
     int image_width = 0, image_height = 0, channels = 0;
-    unsigned char* image_data = stbi_load(filename, &image_width, &image_height, &channels, 4);
-    if (image_data == nullptr) return false;
 
-    GLuint image_texture;
+    unsigned char* image_data = stbi_load(
+        filename,
+        &image_width,
+        &image_height,
+        &channels,
+        4
+    );
+
+    if (image_data == nullptr) {
+        return false;
+    }
+
+    GLuint image_texture = 0;
     glGenTextures(1, &image_texture);
     glBindTexture(GL_TEXTURE_2D, image_texture);
+
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, image_width, image_height, 0, GL_RGBA, GL_UNSIGNED_BYTE, image_data);
+
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+
+    glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
+
+    glTexImage2D(
+        GL_TEXTURE_2D,
+        0,
+        GL_RGBA,
+        image_width,
+        image_height,
+        0,
+        GL_RGBA,
+        GL_UNSIGNED_BYTE,
+        image_data
+    );
+
     stbi_image_free(image_data);
 
     *out_texture = image_texture;
@@ -97,9 +141,31 @@ void Taskbar::draw() {
     ImGui::PushStyleColor(ImGuiCol_ButtonActive, ImVec4(0.80f, 0.05f, 0.05f, 1.0f));
     ImGui::PushStyleColor(ImGuiCol_Text, ImVec4(1.0f, 0.25f, 0.25f, 1.0f));
 
-    if (ImGui::Button("PWR", ImVec2(buttonWidth, buttonHeight))) {
-        glfwSetWindowShouldClose(appWindow, GLFW_TRUE);
+    float pwrIconSize = 24.0f;
+
+    ImGui::PushStyleVar(
+        ImGuiStyleVar_FramePadding,
+        ImVec2(
+            (buttonWidth - pwrIconSize) / 2.0f,
+            (buttonHeight - pwrIconSize) / 2.0f
+        )
+    );
+
+    if (pwrIcon != 0) {
+        if (ImGui::ImageButton(
+            "PwrBtn",
+            (void*)(intptr_t)pwrIcon,
+            ImVec2(pwrIconSize, pwrIconSize)
+        )) {
+            glfwSetWindowShouldClose(appWindow, GLFW_TRUE);
+        }
+    } else {
+        if (ImGui::Button("PWR", ImVec2(buttonWidth, buttonHeight))) {
+            glfwSetWindowShouldClose(appWindow, GLFW_TRUE);
+        }
     }
+
+    ImGui::PopStyleVar();
 
     ImGui::PopStyleColor(4); 
     
