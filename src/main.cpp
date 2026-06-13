@@ -5,7 +5,6 @@
 #include "imgui_impl_glfw.h"
 #include "imgui_impl_opengl3.h"
 
-// NEW: Object-Oriented Architecture
 #include "UIManager.h"
 #include "ShellUI.h"
 #include "Desktop.h"
@@ -29,9 +28,6 @@ int main() {
     ImGui_ImplOpenGL3_Init("#version 130");
     ImGui::StyleColorsDark();
 
-    // ==========================================
-    // Phase 3: Start System Services - Register Windows
-    // ==========================================
     Desktop desktop;
 
     auto taskbar = std::make_shared<Taskbar>(window);
@@ -44,9 +40,7 @@ int main() {
     UIManager::getInstance().registerWindow("FileExplorer", fileExp);
     UIManager::getInstance().registerWindow("TaskManager", taskMgr);
 
-    // ==========================================
-    // Phase 4: The Main Render Loop
-    // ==========================================
+  
     while (!glfwWindowShouldClose(window)) {
         glfwPollEvents();
 

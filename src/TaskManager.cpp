@@ -72,15 +72,15 @@ void TaskManagerWindow::draw() {
         for (const auto& proc : g_Processes) {
             ImGui::TableNextRow();
 
-            // Column 1: Process Name
+            //process name
             ImGui::TableSetColumnIndex(0);
             ImGui::Text("%s", proc.name.c_str());
 
-            // Column 2: PID
+            //pid
             ImGui::TableSetColumnIndex(1);
             ImGui::Text("%d", proc.pid);
 
-            // Column 3: CPU Usage
+            //cpu usage
             ImGui::TableSetColumnIndex(2);
             if (proc.cpuUsage > 10.0f) {
                 // Highlight resource hogs in light orange/red
@@ -89,7 +89,7 @@ void TaskManagerWindow::draw() {
                 ImGui::Text("%.1f %%", proc.cpuUsage);
             }
 
-            // Column 4: Memory Usage
+            //memory usage
             ImGui::TableSetColumnIndex(3);
             ImGui::Text("%.1f MB", proc.memoryUsage);
         }
