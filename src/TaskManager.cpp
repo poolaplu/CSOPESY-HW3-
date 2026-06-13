@@ -13,7 +13,7 @@ struct ProcessInfo {
 
 static std::vector<ProcessInfo> g_Processes = {
     { 1024, "chrome.exe", 2.5f, 412.3f },
-    { 2452, "csopesy.exe", 12.1f, 85.4f }, // Fun reference to your OS class!
+    { 2452, "csopesy.exe", 12.1f, 85.4f },
     { 884, "Discord.exe", 0.8f, 180.1f },
     { 4120, "svchost.exe", 0.1f, 24.0f },
     { 9132, "visualstudio.exe", 5.4f, 1204.8f }
